@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const bcrypt = require('bcrypt');
 const cors = require('cors');
 const app = express();
-const port = 5501;
+const port = process.env.PORT||5501;
 
 app.use(cors());
 app.use(bodyParser.json());
